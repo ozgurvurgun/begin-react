@@ -1,12 +1,17 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 
+const names = ["ozgur", "ece", "elis"];
 
 function App() {
-    return <h1>ozgur vurgun</h1>;
+    return(
+    <div>
+        {names.map(name => (<h1>{name}</h1>))}
+    </div>
+    );
 }
 
 ReactDOM.render(
-    <App/>,
+    <App />,
     document.getElementById("root")
 );
